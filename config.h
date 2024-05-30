@@ -20,7 +20,9 @@
 // #define CONFIG_MODE     CONFIG_MODE_SPECIAL     // Anti-touch mode (special working mode)
 
 /* some extra features defined begin */
-#define WIFI_CONTROL_SELF_MODE  0
+#ifndef WIFI_CONTROL_SELF_MODE
+    #define WIFI_CONTROL_SELF_MODE  0
+#endif
 #define SUPPORT_GREEN_TIME      1
 #define SUPPORT_RTC_TIME        1
 /* some extra features defined end */
